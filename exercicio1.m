@@ -12,7 +12,7 @@ imax = 20;
 % Utilizando método da Secante Modificado:
 
 h = zeros(imax, 1); % Vetor que armazena os valores de t
-h(1) = x0; % Valor inicial de t
+h(1) = x0 + 1e-12; % Valor inicial de t mais uma correção para que se possa utilizar este método
 erro = zeros(imax, 1); % Vetor que armazena os valores de erros
 delta = 0.0001; % Perturbação em torno do valor da variável independente
 
